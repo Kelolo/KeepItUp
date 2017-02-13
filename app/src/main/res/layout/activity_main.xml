@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,10 +10,217 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cz264.keepitup.MainActivity">
+    tools:context="com.example.cz264.keepitup.MainActivity"
+    android:weightSum="3"
+    android:background="@color/colorPrimary">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/weightBtn">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/weight"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:text="30%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView2"
+            android:textSize="36sp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="CodeSolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Do you have faith in yourself?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:text="5 Challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView7"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#15000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_weight="1"
+        android:id="@+id/yogaBtn">
+
+        <TextView
+            android:text="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView2"
+            android:textSize="36sp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="Yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Do you have faith in yourself?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:text="1 hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView7"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#15000000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lotus"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cardioBtn">
+
+        <TextView
+            android:text="30%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView2"
+            android:textSize="36sp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="Cardio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Healthy body is important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:text="10 Sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView7"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#15000000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
